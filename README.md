@@ -4,7 +4,7 @@ Edit `tomcat-users.xml`, `Dockerfile`, and `config.properties` to contain the co
 Usage:
 
 1. `docker build -t adsabs/vocbench .`
-1. `docker run -d --name vocbench -p 8080:8080 -v $PWD/vols/data:/data/:rw -v $PWD/vols/SemanticTurkeyData:/vocbench/st-server/SemanticTurkeyData:rw -v $PWD/vols/aduna/:/usr/share/tomcat7/.aduna/openrdf-sesame/repositories adsabs/vocbench`
+1. `docker run -d --name vocbench -p 8080:8080 -p 1979:1979 -v $PWD/vols/data:/data/:rw -v $PWD/vols/SemanticTurkeyData:/vocbench/st-server/SemanticTurkeyData:rw -v $PWD/vols/aduna/:/usr/share/tomcat7/.aduna/openrdf-sesame/repositories adsabs/vocbench`
 
 To start|stop: `sudo docker start|stop vocbench`
 
